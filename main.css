@@ -9,15 +9,18 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background: #1abc9c;
-    color: white;
+    background-image: url(images/fakeimage2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+    
 }
 
 
 /* Increase the font size of the heading */
 
 .header h1 {
-    font-size: 40px;
+    font-size: 60px;
 }
 
 
@@ -25,7 +28,8 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: cadetblue;
+  
 }
 
 
@@ -43,7 +47,7 @@ body {
 
 /* Right-aligned link */
 
-.navbar a.right {
+.navbar a {
     float: right;
 }
 
@@ -51,7 +55,7 @@ body {
 /* Change color on hover */
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: burlywood;
     color: black;
 }
 
@@ -66,7 +70,9 @@ body {
     /* IE10 */
     flex-wrap: wrap;
 }
-
+blockquote{
+    float:right;
+}
 
 /* Create two unequal columns that sits next to each other */
 
@@ -96,12 +102,58 @@ body {
 /* Fake image, */
 
 .fakeimg {
-    background-color: #aaa;
+    background-color: skyblue;
     width: 100%;
     padding: 20px;
 }
-
-
+.fakeimg img{
+    height: 300px;
+    width:30%;
+}
+/*album*/
+.album .column{
+    width:20%;
+    display: inline-flex;
+    margin:30px;
+}
+.album .column img{
+    width:250px;
+}
+.form-details{
+    background: pink;
+}
+input,textarea{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline:none;
+    border-bottom: solid 2px magenta;
+    width:50%;
+    margin:30px;
+    font-family: sans-serif;
+}
+textarea{
+    height:60px;
+}
+.form-details{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ input[type="submit"]{
+    width:150px;
+    background:deeppink;
+     margin-top: 10px;
+     border: none;
+     border-radius: 10px;
+     cursor: pointer;
+     font-size:1em;
+     color: burlywood;
+}
+form ::placeholder{
+    color:#231709;
+    font-size: 18px;
+}
 /* Footer */
 
 .footer {
