@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Webdev task one </title>
 
 </head>
@@ -19,6 +20,11 @@
     <div class="navbar">
 
         <!--Add navigation links on the right-->
+        <ul><a href="#">home</a></ul>
+        <ul><a href="#">about</a></ul>                                      
+        <ul><a href="#">contacts</a></ul>
+                
+        
 
     </div>
 
@@ -26,25 +32,75 @@
         <div class="side">
             <h2>About Me</h2>
             <h5>Photo of me:</h5>
+          
+              
+          
             <!--Add a div of class "fakeimg"-->
+          <div class="fakeimg">
             <!--Add an image as a link to navigate home of height 200px-->
-
+              <a href="#"><img src="images/fakeimage2.png"></a>
             <!--Add a blockquote decribing yourself ,make the key aspect strong-->
+              <blockquote>
+              Recent graduate with a degree in English from Bath University.<br> Practical work experience as the former editor of Bath University student blog and magazine.<br>Looking to start my career in journalism in a role where I can build on the skills gained .
+                  
+              </blockquote>
+            </div>
             <h3>More Text</h3>
             <p>Lorem ipsum dolor sit ame.</p>
             <!--Add a photo album-->
+            <div class="album">
+  <div class="column">
+    <img src="images/fakeimage2.png">
+  </div>
+   <div class="column">
+     <img src="images/fakeimage2.png">
+  </div>
+  <div class="column">
+    <img src="images/fakeimage2.png">
+  </div>
+  <div class="column">
+    <img src="images/fakeimage2.png">
+  </div>
+</div>
+
+            
         </div>
         <div class="main">
             <!--Add a heading 2 DSC Moi University Onboarding Session -->
+            <h2>
+            DSC Moi University Onboarding Session
+            </h2>
             <!--Add a heading 5 with date-->
+            <h5> 28th October 2020</h5>
             <!--Add a div class fakeimg ,add a youtube video in the div sourcing from DSC Moi University Mentorship Program Onboarding Session-->
-            <p>Some text..</p>
+            <div class="fakeimg">
+            <iframe src="https://www.youtube.com/watch?v=MHQmm0jTFco" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>We have groups divided based on interests</p>
             <!--Create unordered lists with ordered sublist-->
+            <li>teams include
+    <ul>
+      <li>Web development</li>
+      <li>Internet of Things</li>
+    <li>Machine learning</li>
+    </ul>
+  </li>
             <br>
             <h2>Contacts</h2>
-
-
-            <!--Add a form to input email,phone number and a message-->
+              <!--Add a form to input email,phone number and a message-->
+  <div class="form-details">
+              
+        <form>
+          
+            <input name="name" type="text" class="contact-input" placeholder="Email address:">
+      
+             <input name="name" type="text" class="contact-input" placeholder="Phone number:">
+           
+            <textarea name="text" class="contact-input" placeholder="Message:"></textarea><br>
+            <input type="submit" value="submit">
+            </form>
+            </div>
+          
         </div>
     </div>
 
